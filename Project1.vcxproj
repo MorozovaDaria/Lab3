@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3aa4727a-3004-4aee-b25c-28432908a36f}</ProjectGuid>
+    <RootNamespace>Project1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ActivateHandler.cpp" />
+    <ClCompile Include="ActivateModuleCommand.cpp" />
+    <ClCompile Include="AdvancedModuleFactory.cpp" />
+    <ClCompile Include="ApartmentModule.cpp" />
+    <ClCompile Include="AsteroidField.cpp" />
+    <ClCompile Include="BiologyLab.cpp" />
+    <ClCompile Include="BuildHandler.cpp" />
+    <ClCompile Include="BuildModuleCommand.cpp" />
+    <ClCompile Include="Capacity.cpp" />
+    <ClCompile Include="CargoContainer.cpp" />
+    <ClCompile Include="Command.cpp" />
+    <ClCompile Include="CommandCenter.cpp" />
+    <ClCompile Include="CommandHistory.cpp" />
+    <ClCompile Include="CrewCabin.cpp" />
+    <ClCompile Include="CrewModuleStrategy.cpp" />
+    <ClCompile Include="Damage.cpp" />
+    <ClCompile Include="DeactivateHandler.cpp" />
+    <ClCompile Include="DeactivateModuleCommand.cpp" />
+    <ClCompile Include="DeepSpace.cpp" />
+    <ClCompile Include="DistributeEnergyCommand.cpp" />
+    <ClCompile Include="EarthOrbit.cpp" />
+    <ClCompile Include="EnergyConsumption.cpp" />
+    <ClCompile Include="EnergyHandler.cpp" />
+    <ClCompile Include="EnergyModule.cpp" />
+    <ClCompile Include="EnergyModuleStrategy.cpp" />
+    <ClCompile Include="EnergySystem.cpp" />
+    <ClCompile Include="EnvironmentProxy.cpp" />
+    <ClCompile Include="EnvironmentSystem.cpp" />
+    <ClCompile Include="ExitHandler.cpp" />
+    <ClCompile Include="Handler.cpp" />
+    <ClCompile Include="HelpHandler.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Durability.cpp" />
+    <ClCompile Include="MedicalCabin.cpp" />
+    <ClCompile Include="MeteorShower.cpp" />
+    <ClCompile Include="Module.cpp" />
+    <ClCompile Include="ModuleEvent.cpp" />
+    <ClCompile Include="MoveHandler.cpp" />
+    <ClCompile Include="MoveModuleCommand.cpp" />
+    <ClCompile Include="PhysicsLab.cpp" />
+    <ClCompile Include="ReactorModule.cpp" />
+    <ClCompile Include="ReactorModuleStrategy.cpp" />
+    <ClCompile Include="RepairHandler.cpp" />
+    <ClCompile Include="RepairModuleCommand.cpp" />
+    <ClCompile Include="ResearchHandler.cpp" />
+    <ClCompile Include="ResearchModule.cpp" />
+    <ClCompile Include="ResearchModuleStrategy.cpp" />
+    <ClCompile Include="ResourcePackage.cpp" />
+    <ClCompile Include="SolarModule.cpp" />
+    <ClCompile Include="SolarStorm.cpp" />
+    <ClCompile Include="SpaceAnomaly.cpp" />
+    <ClCompile Include="StandardModuleFactory.cpp" />
+    <ClCompile Include="StartResearchCommand.cpp" />
+    <ClCompile Include="Station.cpp" />
+    <ClCompile Include="StationFacade.cpp" />
+    <ClCompile Include="StationMediator.cpp" />
+    <ClCompile Include="StatusCommand.cpp" />
+    <ClCompile Include="StatusHandler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActivateHandler.h" />
+    <ClInclude Include="ActivateModuleCommand.h" />
+    <ClInclude Include="AdvancedModuleFactory.h" />
+    <ClInclude Include="ApartmentModule.h" />
+    <ClInclude Include="AsteroidField.h" />
+    <ClInclude Include="BiologyLab.h" />
+    <ClInclude Include="BuildHandler.h" />
+    <ClInclude Include="BuildModuleCommand.h" />
+    <ClInclude Include="Capacity.h" />
+    <ClInclude Include="CargoContainer.h" />
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="CommandCenter.h" />
+    <ClInclude Include="CommandHistory.h" />
+    <ClInclude Include="CrewCabin.h" />
+    <ClInclude Include="CrewModuleStrategy.h" />
+    <ClInclude Include="Damage.h" />
+    <ClInclude Include="DeactivateHandler.h" />
+    <ClInclude Include="DeactivateModuleCommand.h" />
+    <ClInclude Include="DeepSpace.h" />
+    <ClInclude Include="DistributeEnergyCommand.h" />
+    <ClInclude Include="Durability.h" />
+    <ClInclude Include="EarthOrbit.h" />
+    <ClInclude Include="EnergyConsumption.h" />
+    <ClInclude Include="EnergyHandler.h" />
+    <ClInclude Include="EnergyModule.h" />
+    <ClInclude Include="EnergyModuleStrategy.h" />
+    <ClInclude Include="EnergySystem.h" />
+    <ClInclude Include="Environment.h" />
+    <ClInclude Include="EnvironmentProxy.h" />
+    <ClInclude Include="EnvironmentSystem.h" />
+    <ClInclude Include="ExitHandler.h" />
+    <ClInclude Include="Handler.h" />
+    <ClInclude Include="HelpHandler.h" />
+    <ClInclude Include="LoggingProxy.h" />
+    <ClInclude Include="MoveHandler.h" />
+    <ClInclude Include="MoveModuleCommand.h" />
+    <ClInclude Include="RepairHandler.h" />
+    <ClInclude Include="RepairModuleCommand.h" />
+    <ClInclude Include="ResearchHandler.h" />
+    <ClInclude Include="StartResearchCommand.h" />
+    <ClInclude Include="StationFacade.h" />
+    <ClInclude Include="StationMediator.h" />
+    <ClInclude Include="StatusCommand.h" />
+    <ClInclude Include="StatusHandler.h" />
+    <ClInclude Include="Types.h" />
+    <ClInclude Include="ExternalObject.h" />
+    <ClInclude Include="IInteractionStrategy.h" />
+    <ClInclude Include="IObservable.h" />
+    <ClInclude Include="IObserver.h" />
+    <ClInclude Include="MedicalCabin.h" />
+    <ClInclude Include="MeteorShower.h" />
+    <ClInclude Include="Module.h" />
+    <ClInclude Include="ModuleEvent.h" />
+    <ClInclude Include="ModuleFactory.h" />
+    <ClInclude Include="PhysicsLab.h" />
+    <ClInclude Include="ReactorModule.h" />
+    <ClInclude Include="ReactorModuleStrategy.h" />
+    <ClInclude Include="ResearchModule.h" />
+    <ClInclude Include="ResearchModuleStrategy.h" />
+    <ClInclude Include="ResourcePackage.h" />
+    <ClInclude Include="SolarModule.h" />
+    <ClInclude Include="SolarStorm.h" />
+    <ClInclude Include="SpaceAnomaly.h" />
+    <ClInclude Include="StandardModuleFactory.h" />
+    <ClInclude Include="Station.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.md" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
